@@ -15,7 +15,6 @@ body {
     color: var(--branco);
     border-color: var(--branco);
     /* cores adicionadas do global alterando a cor padrão vinda do bootstrap */
-
 }
 
 .btn-primary:hover {
@@ -25,27 +24,26 @@ body {
     /* a borda estava azul, assim ela não fica aparente */
 }
 
-.btn-primary:active{
-    background-color: var(--branco);
-    border-color: var(--base);
-    border: 2px;
-    color: var(--base);
-}
 .container-login {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+/* Alinhamento de itens do container branco */
     gap: 50px;
     padding: 30px 80px;
-    background-color: var(--branco);
+    /* Ajuste de afastamento */
     border-radius: 20px;
+    /* Arredondando as bordas */
+    background-color: var(--branco);
+    /* Cor do fundo */
 }
 
 .cabecalho-login {
     width: 30%;
     margin-bottom: 8vh;
+    /* Ajuste de afastamento das bordas e do topo da página */
 }
 
 .btn-check:checked+.btn,
@@ -57,4 +55,5 @@ body {
     border-color: var(--base);
     color: var(--base);
     border: 4px;
+    /* ajuste para quando o botão for clicado não se tornar azul (peguei o comndo para alterar o botão inspecionando a página) */
 }
