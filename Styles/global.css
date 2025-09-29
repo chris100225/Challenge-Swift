@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --base: #F04E29; /* cor laranja, principal do site */
+    --detalhes: #000000; /*preto para detalhes */
+    --texto-suave: rgba(0, 0, 0, 0.5); /*texto da caixa de entrada */
+    --branco: #FFFFFF; /*branco */
+}
+
+* {
+    box-sizing: border-box; /*ajuste de tamanho da página*/
+    margin: 0; /*tirando a margem padrão */
+    padding: 0; /*tirando o padding padrão */
+    font-family: "Noto Sans", sans-serif; /* definindo a fonte padrão */
+}
+
+html {
+    scroll-behavior: smooth; /* deixa o scroll da página suave */
+}

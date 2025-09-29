@@ -1,0 +1,60 @@
+body {
+    background-color: var(--base);
+    color: var(--detalhes);
+    /* as cores usada estão no repositório global css, ao usar em outro arquivo css, elas não terão atalho, mas funcionarão, eu gosto de adicionar no topo da página pra agilizar o código e depois apagar para reduzir o tamanho do código*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* os comandos estão alinhando o container branco no centro da página */
+    height: 100vh;
+    /* para que o alinhamento fique realmente no centro, é preciso adicionar altura */
+}
+
+.btn-primary {
+    background-color: var(--base);
+    color: var(--branco);
+    border-color: var(--branco);
+    /* cores adicionadas do global alterando a cor padrão vinda do bootstrap */
+
+}
+
+.btn-primary:hover {
+    background-color: #d03f1f;
+    /* cor um pouco mais escura para quando o cursor passar por cima do botão */
+    border-color: var(--branco);
+    /* a borda estava azul, assim ela não fica aparente */
+}
+
+.btn-primary:active{
+    background-color: var(--branco);
+    border-color: var(--base);
+    border: 2px;
+    color: var(--base);
+}
+.container-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    padding: 30px 80px;
+    background-color: var(--branco);
+    border-radius: 20px;
+}
+
+.cabecalho-login {
+    width: 30%;
+    margin-bottom: 8vh;
+}
+
+.btn-check:checked+.btn,
+.btn.active, 
+.btn.show,
+.btn:first-child:active,
+:not(.not-check)+.btn:active {
+    background-color: var(--branco);
+    border-color: var(--base);
+    color: var(--base);
+    border: 4px;
+}
