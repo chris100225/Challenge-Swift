@@ -1,28 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --base: #F04E29; /* cor laranja, principal do site */
-    --detalhes: #000000; /*preto para detalhes */
-    --texto-suave: rgba(0, 0, 0, 0.5); /*texto da caixa de entrada */
-    --branco: #FFFFFF; /*branco */
+    --base: #F04E29;
+    /* cor laranja, principal do site */
+    --detalhes: #000000;
+    /*preto para detalhes */
+    --texto-suave: rgba(0, 0, 0, 0.5);
+    /*texto da caixa de entrada */
+    --branco: #FFFFFF;
+    /*branco */
 }
 
 * {
-    box-sizing: border-box; /*ajuste de tamanho da página*/
-    margin: 0; /*tirando a margem padrão */
-    padding: 0; /*tirando o padding padrão */
-    font-family: "Noto Sans", sans-serif; /* definindo a fonte padrão */
+    box-sizing: border-box;
+    /*ajuste de tamanho da página*/
+    margin: 0;
+    /*tirando a margem padrão */
+    padding: 0;
+    /*tirando o padding padrão */
+    font-family: "Noto Sans", sans-serif;
+    /* definindo a fonte padrão */
 }
 
 html {
-    scroll-behavior: smooth; /* deixa o scroll da página suave */
+    scroll-behavior: smooth;
+    /* deixa o scroll da página suave */
 }
 
-.row{
+.row {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 1em;
+    
 }
 
 .col {
@@ -34,7 +44,8 @@ html {
     background-color: var(--bg-home);
 }
 
-.nav-underline{
+.nav,
+.nav-underline {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,23 +55,56 @@ html {
 }
 
 .logo {
-    width: 185px;
-    height: 59px;
+    width: 20%
 }
 
-.input-group-text{
+.input-group-text {
     border-color: var(--base);
     size: 1.5em;
     margin: 0.3rem;
 }
 
-.form-control{
+.form-control {
     border-color: var(--base);
-        size: 1.5em;
+    size: 1.5em;
     margin: 0.3rem;
 }
 
-.col-lg-2{
+.col-lg-2 {
     margin: 0.5em;
     gap: 10%;
+}
+
+
+.nav-underline .nav-link.active, .nav-underline .show>.nav-link {
+    font-weight: 700;
+    color: var(--base);
+    border-bottom-color: currentcolor;
+} 
+
+.nav {
+    --bs-nav-link-color: black;
+    --bs-nav-link-hover-color: black;
+    --bs-nav-link-disabled-color:black;
+    gap: 4rem;
+}
+
+.col, .col-lg-2{
+    gap: 1.5rem;
+}
+
+.notificacoes{
+    width: 20%;
+}
+
+.perfil{
+    width: 40%;
+}
+
+hr {
+    height: 1px; /* Define a espessura da linha */
+    background-color: black; /* Define a cor da linha */
+    border: none; /* Remove a borda padrão do navegador */
+    margin: 20px 0; /* Define a margem superior e inferior */
+    opacity: 80%;
 }
