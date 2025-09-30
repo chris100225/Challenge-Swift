@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --base: #F04E29; /* cor laranja, principal do site */
+    --detalhes: #000000; /*preto para detalhes */
+    --texto-suave: rgba(0, 0, 0, 0.5); /*texto da caixa de entrada */
+    --branco: #FFFFFF; /*branco */
+}
+
+* {
+    box-sizing: border-box; /*ajuste de tamanho da página*/
+    margin: 0; /*tirando a margem padrão */
+    padding: 0; /*tirando o padding padrão */
+    font-family: "Noto Sans", sans-serif; /* definindo a fonte padrão */
+}
+
+html {
+    scroll-behavior: smooth; /* deixa o scroll da página suave */
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    padding: 40px;
+    background-color: var(--bg-home);
+}
+
+.nav-underline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 5%;
+    width: 100%;
+}
+
+.logo {
+    width: 185px;
+    height: 59px;
+}
+
+.input-group-text{
+    border-color: var(--base);
+    size: 1.5em;
+    margin: 0.3rem;
+}
+
+.form-control{
+    border-color: var(--base);
+        size: 1.5em;
+    margin: 0.3rem;
+}
+
+.col-lg-2{
+    margin: 0.5em;
+    gap: 10%;
+}
