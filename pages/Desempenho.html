@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel de Desempenho</title>
+  <link rel="stylesheet" href="Desempenho.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="topo">
+    <div class="logo">Swift</div>
+    <nav class="menu">
+      <a href="#">Início</a>
+      <a href="#">Desempenho</a>
+      <a href="#">Recompensas</a>
+    </nav>
+    <div class="acoes">
+      <input type="text" placeholder="Pesquisar...">
+      <span class="icone">🔔</span>
+      <img src="avatar.png" alt="Avatar usuário" class="avatar">
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="conteudo">
+    <h1>Seu desempenho</h1>
+
+    <section class="grid">
+      <!-- CARD 1 -->
+      <div class="card desempenho">
+        <h3>Nível 3</h3>
+        <p>875 / 1000 XP</p>
+        <!-- barra de progresso -->
+        <progress value="875" max="1000"></progress>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card missoes">
+        <h3>Missões</h3>
+        <ul>
+          <li>Missões Semanais</li>
+          <li>Missões Mensais</li>
+        </ul>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="card mensal">
+        <h3>Mensal</h3>
+        <img src="grafico.png" alt="Gráfico de desempenho">
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="card resumo">
+        <ul>
+          <li>❌ Faltas: 1</li>
+          <li>✅ Metas Alcançadas: 35</li>
+          <li>📌 Missões Semanais: 9</li>
+          <li>⚠️ Advertências: 0</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2024 - Swift Corporativo. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
