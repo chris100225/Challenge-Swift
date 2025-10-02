@@ -113,56 +113,39 @@ hr {
     opacity: 80%;
 }
 
-.recompensas {
-    margin-top: -0.5%;
-    margin-left: 6%;
-    font-size: clamp(12px, 3vw, 40px);
-    font-family: 'Inter', sans-serif; /* usa a fonte Inter */
-    font-weight: 600; /* Semibold */
+
+
+/* Estilo para ajustar a altura da barra de navegação se necessário */
+.navbar {
+    min-height: 60px;
+}
+
+/* Ajusta o campo de pesquisa para ter a largura desejada */
+.input-group input.rounded-pill {
+    padding-right: 1.5rem !important; /* Adiciona espaço para o ícone de pesquisa, se usado */
+}
+
+/* Estilo para os cards do catálogo ficarem alinhados */
+.card {
+    border-radius: 10px; /* Leve arredondamento nos cantos */
+}
+
+/* Opcional: Estilo para centralizar as imagens dentro dos cards, garantindo que o texto fique abaixo */
+.card-body img {
+
+    display: block;
+    margin: 0 auto 10px auto;
 }
 
 
-.container1{
-    background-color: var(--corborda);
-    width: 55vw;
-    height: 20vw;
-    border: 1px solid var(--detalhes);
-    border-radius: 20px;
-    margin-left: 4%;
-    margin-top: 1%;
-    font-family: var(--fontepadrao);
-    
-    
-}
-.container2{
-        background-color: var(--corborda);
-    width: 30vw;
-    height: 12vw;
-    border: 1px solid var(--detalhes);
-    border-radius: 20px;
-    margin-left: 65%;
-    margin-top: -20%;
-    font-family: var(--fontepadrao);
+.fundo-azul-recompensa {
+    background-color: #10C5E1; /* Seu tom de azul desejado */
+    padding: 10px; /* Opcional: Para criar um espaço entre a imagem e a borda do fundo */
+    border-radius: 5px; /* Opcional: Para arredondar os cantos do fundo */
+    display: inline-block; /* Importante para que o padding e a largura funcionem corretamente */
 }
 
-.container3{
-    background-color: var(--corborda);
-    width: 55vw;
-    height: 5vw;
-    border: 1px solid var(--detalhes);
-    border-radius: 20px;
-    margin-left: 4%;
-    margin-top: 10%;
-    font-family: var(--fontepadrao);
-    
-}
-.container4{
-        background-color: var(--corborda);
-    width: 30vw;
-    height: 11vw;
-    border: 1px solid var(--detalhes);
-    border-radius: 20px;
-    margin-left: 65%;
-    margin-top: -11%;
-    font-family: var(--fontepadrao);
-}
+/* Você pode querer definir a fonte para ser mais parecida com a da imagem, se necessário */
+/* body {
+    font-family: Arial, sans-serif; 
+} */
