@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --base: #F04E29;
+    /* cor laranja, principal do site */
+    --detalhes: #000000;
+    /*preto para detalhes */
+    --texto-suave: rgba(0, 0, 0, 0.5);
+    /*texto da caixa de entrada */
+    --branco: #FFFFFF;
+    /*branco */
+    --corborda: #F8F7F6;
+
+    --fontepadrao:'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    /*ajuste de tamanho da página*/
+    margin: 0;
+    /*tirando a margem padrão */
+    padding: 0;
+    /*tirando o padding padrão */
+    font-family: "Noto Sans", sans-serif;
+    /* definindo a fonte padrão */
+    
+}
+
+html {
+    scroll-behavior: smooth;
+    /* deixa o scroll da página suave */
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    padding: 40px;
+    background-color: var(--bg-home);
+}
+
+.nav,
+.nav-underline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 5%;
+    width: 100%;
+}
+
+.logo {
+    width: 20%
+}
+
+.input-group-text {
+    border-color: var(--base);
+    size: 1.5em;
+    margin: 0.3rem;
+}
+
+.form-control {
+    border-color: var(--base);
+    size: 1.5em;
+    margin: 0.3rem;
+}
+
+.col-lg-2 {
+    margin: 0.5em;
+    gap: 10%;
+}
+
+
+.nav-underline .nav-link.active, .nav-underline .show>.nav-link {
+    font-weight: 700;
+    color: var(--base);
+    border-bottom-color: currentcolor;
+} 
+
+.nav {
+    --bs-nav-link-color: black;
+    --bs-nav-link-hover-color: black;
+    --bs-nav-link-disabled-color:black;
+    gap: 4rem;
+}
+
+.col, .col-lg-2{
+    gap: 1.5rem;
+}
+
+.notificacoes{
+    width: 20%;
+}
+
+.perfil{
+    width: 40%;
+}
+
+hr {
+    height: 1px; /* Define a espessura da linha */
+    background-color: black; /* Define a cor da linha */
+    border: none; /* Remove a borda padrão do navegador */
+    margin: 20px 0; /* Define a margem superior e inferior */
+    opacity: 80%;
+}
+
+.recompensas {
+    margin-top: -0.5%;
+    margin-left: 6%;
+    font-size: clamp(12px, 3vw, 40px);
+    font-family: 'Inter', sans-serif; /* usa a fonte Inter */
+    font-weight: 600; /* Semibold */
+}
+
+
+.container1{
+    background-color: var(--corborda);
+    width: 55vw;
+    height: 20vw;
+    border: 1px solid var(--detalhes);
+    border-radius: 20px;
+    margin-left: 4%;
+    margin-top: 1%;
+    font-family: var(--fontepadrao);
+    
+}
+.container2{
+        background-color: var(--corborda);
+    width: 30vw;
+    height: 12vw;
+    border: 1px solid var(--detalhes);
+    border-radius: 20px;
+    margin-left: 65%;
+    margin-top: -20%;
+    font-family: var(--fontepadrao);
+}
+
+.container3{
+    background-color: var(--corborda);
+    width: 55vw;
+    height: 5vw;
+    border: 1px solid var(--detalhes);
+    border-radius: 20px;
+    margin-left: 4%;
+    margin-top: 10%;
+    font-family: var(--fontepadrao);
+    
+}
+.container4{
+        background-color: var(--corborda);
+    width: 30vw;
+    height: 11vw;
+    border: 1px solid var(--detalhes);
+    border-radius: 20px;
+    margin-left: 65%;
+    margin-top: -11%;
+    font-family: var(--fontepadrao);
+}
