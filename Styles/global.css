@@ -1,19 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --base: #F04E29; /* cor laranja, principal do site */
-    --detalhes: #000000; /*preto para detalhes */
-    --texto-suave: rgba(0, 0, 0, 0.5); /*texto da caixa de entrada */
-    --branco: #FFFFFF; /*branco */
+    --base: #F04E29;
+    /* cor laranja, principal do site */
+    --detalhes: #000000;
+    /*preto para detalhes */
+    --texto-suave: rgba(0, 0, 0, 0.5);
+    /*texto da caixa de entrada */
+    --branco: #FFFFFF;
+    /*branco */
+
+    --bs-primary: #F04E29;
+    --bs-primary-rgb: #F04E29;
+
+    --bs-primary-bg-subtle: #bf3c1f;
+
+    --bs-primary-border-subtle: #df421e;
+
+    --bs-primary-text-emphasis: #f05d3c;
+    --bs-blue: #f04e29;
+    --bs-cyan: #F04E29;
+    --bs-info: #F04E29;
+    --bs-btn-bg:#F04E29;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #F04E29;
+    --bs-btn-border-color: #F04E29;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #F04E29;
+    --bs-btn-hover-border-color: #F04E29;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #F04E29;
+    --bs-btn-active-border-color: #F04E29;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #F04E29;
+    --bs-btn-disabled-border-color: #F04E29;
 }
 
 * {
-    box-sizing: border-box; /*ajuste de tamanho da página*/
-    margin: 0; /*tirando a margem padrão */
-    padding: 0; /*tirando o padding padrão */
-    font-family: "Noto Sans", sans-serif; /* definindo a fonte padrão */
+    box-sizing: border-box;
+    /*ajuste de tamanho da página*/
+    margin: 0;
+    /*tirando a margem padrão */
+    padding: 0;
+    /*tirando o padding padrão */
+    font-family: "Noto Sans", sans-serif;
+    /* definindo a fonte padrão */
 }
 
 html {
-    scroll-behavior: smooth; /* deixa o scroll da página suave */
+    scroll-behavior: smooth;
+    /* deixa o scroll da página suave */
 }
