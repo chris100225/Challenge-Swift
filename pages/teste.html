@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Desempenho - Swift</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    /* Peq. ajustes para deixar com visual mais próximo */
+    body { font-family: Inter, Arial, sans-serif; }
+    .card { border-radius: 10px; }
+    .top-badge { font-size: 0.85rem; padding: 6px 10px; border-radius: 999px; }
+    .stat-icon { font-size: 1.15rem; }
+    .progress { height: 12px; border-radius: 8px; overflow:hidden; }
+    .progress .progress-bar { border-radius: 8px; }
+    .card .card-title { margin-bottom: .6rem; }
+    /* sombra sutil */
+    .card { box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+    /* responsividade pequena correção */
+    @media (max-width: 992px) {
+      .text-center-md { text-align: center; }
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center fw-bold text-danger" href="#">
+        <img src="assets/logo.png" alt="Logo" height="28" class="me-2"> Swift
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+          <li class="nav-item"><a class="nav-link active text-danger" href="#">Desempenho</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Recompensas</a></li>
+        </ul>
+
+        <form class="d-flex align-items-center">
+          <input class="form-control me-2" type="search" placeholder="Pesquisar...">
+          <button class="btn btn-outline-danger me-3" type="button"><i class="bi bi-bell"></i></button>
+          <img src="assets/avatar.png" alt="Avatar" class="rounded-circle" width="40">
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTEÚDO -->
+  <main class="container my-4">
+    <h2 class="mb-4">Seu desempenho</h2>
+
+    <div class="row g-4">
+      <!-- CARD PRINCIPAL (Nível + medalha + badges) -->
+      <div class="col-lg-8">
+        <div class="card p-3">
+          <div class="row align-items-center">
+            <div class="col-md-4 text-center text-center-md">
+              <img src="assets/avatar.png" alt="Avatar" class="rounded-circle mb-2" width="80">
+              <p class="fw-bold mb-1">Nível 3</p>
+              <div class="progress mb-1">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 87%;">875 / 1000 XP</div>
+              </div>
+              <small class="text-muted">875 / 1000 XP</small>
+            </div>
+
+            <div class="col-md-8 text-center">
+              <img src="assets/medalha.png" alt="Medalha" width="120">
+            </div>
+          </div>
+
+          <div class="d-flex flex-wrap justify-content-between align-items-center mt-3 gap-2">
+            <div class="d-flex align-items-center gap-2">
+              <span class="top-badge bg-danger text-white"><i class="bi bi-exclamation-circle-fill me-1"></i> Advertências</span>
+              <span class="top-badge bg-warning text-dark"><i class="bi bi-calendar-x me-1"></i> Faltas</span>
+              <span class="top-badge bg-success text-white"><i class="bi bi-graph-up me-1"></i> Metas Atingidas</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+              <span class="top-badge bg-primary text-white"><i class="bi bi-flag-fill me-1"></i> Missões Semanais</span>
+              <span class="top-badge bg-secondary text-white"><i class="bi bi-award-fill me-1"></i> Missões Mensais</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LATERAL (Metas / Pequenos cards) -->
+      <div class="col-lg-4">
+        <div class="card p-3 mb-3">
+          <h6 class="fw-bold">Missões / Metas</h6>
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <div>
+              <small class="text-muted">Missões</small>
+              <div class="fw-semibold">Semanais / Mensais</div>
+            </div>
+            <div class="text-end">
+              <span class="badge bg-success">Concluídas</span>
+            </div>
+          </div>
+          <hr class="my-2">
+          <h6 class="fw-bold">Metas</h6>
+          <ul class="list-unstyled mb-0">
+            <li>📈 Aumentar ticket médio</li>
+            <li>🤝 Fidelizar clientes</li>
+          </ul>
+        </div>
+
+        <div class="card p-3">
+          <h6 class="fw-bold">Resumo</h6>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div><i class="bi bi-x-circle text-danger me-2"></i>Faltas</div>
+              <span class="badge bg-light text-dark">1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div><i class="bi bi-check2-circle text-success me-2"></i>Metas Alcançadas</div>
+              <span class="badge bg-light text-dark">35</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div><i class="bi bi-list-task me-2"></i>Missões Semanais</div>
+              <span class="badge bg-light text-dark">9</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div><i class="bi bi-exclamation-triangle text-warning me-2"></i>Advertências</div>
+              <span class="badge bg-light text-dark">0</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- GRÁFICO MENSAL -->
+      <div class="col-lg-8">
+        <div class="card p-3">
+          <h5 class="card-title">Mensal</h5>
+          <canvas id="monthlyChart" height="140"></canvas>
+        </div>
+      </div>
+
+      <!-- OUTRAS ESTATÍSTICAS (repetição lateral se precisar) -->
+      <div class="col-lg-4">
+        <!-- Você pode colocar outro card aqui se quiser -->
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3">
+    © 2024 - Swift Corporativo. Todos os direitos reservados.
+  </footer>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Dados de exemplo — troque pelos seus valores reais
+    const labels = ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Out'];
+    const barData = [20, 35, 45, 55, 65, 70, 80, 90]; // valores das barras
+    const lineData = [18, 30, 40, 50, 60, 68, 75, 88]; // linha de tendência
+
+    const ctx = document.getElementById('monthlyChart').getContext('2d');
+    const monthlyChart = new Chart(ctx, {
+      data: {
+        labels: labels,
+        datasets: [
+          {
+            type: 'bar',
+            label: 'Desempenho',
+            data: barData,
+            backgroundColor: '#FF6B4A',
+            borderRadius: 6,
+            barThickness: 20
+          },
+          {
+            type: 'line',
+            label: 'Tendência',
+            data: lineData,
+            borderColor: '#FF3A20',
+            borderWidth: 2,
+            tension: 0.35,
+            fill: false,
+            pointRadius: 3,
+            pointBackgroundColor: '#FF3A20'
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: { mode: 'index', intersect: false }
+        },
+        scales: {
+          x: {
+            grid: { display: false },
+            ticks: { color: '#666' }
+          },
+          y: {
+            beginAtZero: true,
+            ticks: { color: '#666' },
+            grid: { color: 'rgba(0,0,0,0.06)' }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
