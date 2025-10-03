@@ -1,72 +1,75 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Painel de Desempenho</title>
-  <link rel="stylesheet" href="Desempenho.css">
-</head>
-<body>
+<body class="bg-light">
 
   <!-- HEADER -->
-  <header class="topo">
-    <div class="logo">Swift</div>
-    <nav class="menu">
-      <a href="#">Início</a>
-      <a href="#">Desempenho</a>
-      <a href="#">Recompensas</a>
-    </nav>
-    <div class="acoes">
-      <input type="text" placeholder="Pesquisar...">
-      <span class="icone">🔔</span>
-      <img src="avatar.png" alt="Avatar usuário" class="avatar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom px-3">
+    <a class="navbar-brand text-danger fw-bold" href="#">Swift</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Desempenho</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Recompensas</a></li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Pesquisar...">
+        <button class="btn btn-outline-danger">🔔</button>
+      </form>
+      <img src="avatar.png" alt="avatar" class="rounded-circle ms-3" width="40">
     </div>
-  </header>
+  </nav>
 
   <!-- MAIN -->
-  <main class="conteudo">
-    <h1>Seu desempenho</h1>
+  <main class="container my-4">
+    <h1 class="mb-4">Seu desempenho</h1>
 
-    <section class="grid">
-      <!-- CARD 1 -->
-      <div class="card desempenho">
-        <h3>Nível 3</h3>
-        <p>875 / 1000 XP</p>
-        <!-- barra de progresso -->
-        <progress value="875" max="1000"></progress>
+    <!-- GRID RESPONSIVO -->
+    <div class="row g-3">
+      <!-- Card desempenho -->
+      <div class="col-md-6">
+        <div class="card p-3">
+          <h5 class="card-title">Nível 3</h5>
+          <p>875 / 1000 XP</p>
+          <div class="progress">
+            <div class="progress-bar bg-success" style="width: 87%"></div>
+          </div>
+        </div>
       </div>
 
-      <!-- CARD 2 -->
-      <div class="card missoes">
-        <h3>Missões</h3>
-        <ul>
-          <li>Missões Semanais</li>
-          <li>Missões Mensais</li>
-        </ul>
+      <!-- Card Missões -->
+      <div class="col-md-6">
+        <div class="card p-3">
+          <h5 class="card-title">Missões</h5>
+          <ul>
+            <li>Missões Semanais</li>
+            <li>Missões Mensais</li>
+          </ul>
+        </div>
       </div>
 
-      <!-- CARD 3 -->
-      <div class="card mensal">
-        <h3>Mensal</h3>
-        <img src="grafico.png" alt="Gráfico de desempenho">
+      <!-- Card Gráfico -->
+      <div class="col-md-8">
+        <div class="card p-3">
+          <h5 class="card-title">Mensal</h5>
+          <img src="grafico.png" class="img-fluid" alt="Gráfico mensal">
+        </div>
       </div>
 
-      <!-- CARD 4 -->
-      <div class="card resumo">
-        <ul>
-          <li>❌ Faltas: 1</li>
-          <li>✅ Metas Alcançadas: 35</li>
-          <li>📌 Missões Semanais: 9</li>
-          <li>⚠️ Advertências: 0</li>
-        </ul>
+      <!-- Card Resumo -->
+      <div class="col-md-4">
+        <div class="card p-3">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">❌ Faltas: 1</li>
+            <li class="list-group-item">✅ Metas: 35</li>
+            <li class="list-group-item">📌 Missões: 9</li>
+            <li class="list-group-item">⚠️ Advertências: 0</li>
+          </ul>
+        </div>
       </div>
-    </section>
+    </div>
   </main>
 
   <!-- FOOTER -->
-  <footer>
+  <footer class="bg-dark text-white text-center py-3">
     © 2024 - Swift Corporativo. Todos os direitos reservados.
   </footer>
 
 </body>
-</html>
