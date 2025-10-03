@@ -97,3 +97,8 @@ header .form-control {
 .progress-bar {
     border-radius: 50px;
 }
+/* =============================== TÍTULOS =============================== */
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700; /* Opcional: Garante que o título fique em negrito */
+}
