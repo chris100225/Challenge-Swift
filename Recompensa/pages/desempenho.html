@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Desempenho</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top bg-white border-bottom">
+  <div class="container-xxl">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center gap-2 swift-brand" href="inicio.html">
+      <img src="../assets/images/NOVA_LOGO_SWIFT_-removebg-preview 1.png"
+           alt="Swift"
+           class="logo-mark"
+           width="28" height="28">
+    </a>
+
+    <!-- Botão do menu hamburguer -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topnav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Conteúdo que colapsa -->
+    <div class="collapse navbar-collapse" id="topnav">
+      <!-- Links da esquerda -->
+      <ul class="navbar-nav ms-2 me-auto gap-lg-3">
+        <li class="nav-item"><a class="nav-link" href="inicio.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link active" href="desempenho.html">Desempenho</a></li>
+        <li class="nav-item"><a class="nav-link" href="recompensas.html">Recompensas</a></li>
+      </ul>
+
+      <!-- Barra de pesquisa -->
+      <form class="searchbar d-none d-md-block me-4" role="search">
+        <i class="bi bi-search"></i>
+        <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+      </form>
+
+      <!-- Ícones e menu do usuário -->
+      <div class="d-flex align-items-center gap-3">
+        <button class="icon-btn" type="button" aria-label="Notificações">
+          <i class="bi bi-bell"></i>
+          <span class="badge rounded-pill">1</span>
+        </button>
+
+        <div class="dropdown">
+          <button class="avatar-btn dropdown-toggle p-0 border-0 bg-transparent" 
+                  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="../assets/images/image 34.png" alt="Perfil" class="avatar">
+          </button>
+          <ul class="dropdown-menu dropdown-menu-lg-end dropdown-menu-start shadow-sm">
+            <li><button class="dropdown-item" type="button" data-logout>Sair</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<main class="container py-4">
+    <h1 class="mb-4">Seu desempenho</h1>
+
+    <div class="row g-4">
+
+        <div class="col-lg-8 d-flex flex-column gap-4">
+
+            <div class="card p-4">
+                <div class="card-body">
+                    <div class="d-flex align-items-center gap-4 mb-4">
+                        <img src="../assets/images/image 34.png" alt="Perfil" class="avatar avatar-xl">
+                        <div class="flex-grow-1">
+                            <h2 class="h3 fw-bold mb-2">Nível 3</h2>
+                            <div class="progress" style="height: 12px;">
+                                <div class="progress-bar" role="progressbar" style="width: 87.5%;" aria-valuenow="87.5" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small class="text-body-secondary fs-6">875 / 1000 XP</small>
+                        </div>
+                        <img src="../assets/images/image 37.png" alt="Selo Vendedor Nível Ouro" style="width: 80px; height: 80px;">
+                    </div>
+
+                    <div>
+                        <p class="fw-bold mb-2">Reputação</p>
+                        <div class="progress mb-4" style="height: 8px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+                        <div class="d-flex justify-content-between text-center">
+                            <div class="d-flex flex-column align-items-center">
+                                <i class="bi bi-exclamation-triangle fs-4 mb-1 text-danger"></i>
+                                <small class="text-body-secondary">Advertências</small>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <i class="bi bi-x-circle fs-4 mb-1 text-danger"></i>
+                                <small class="text-body-secondary">Faltas</small>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <i class="bi bi-trophy fs-4 mb-1 text-success"></i>
+                                <small class="text-body-secondary">Metas Alcançadas</small>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <i class="bi bi-calendar-check fs-4 mb-1 text-primary"></i>
+                                <small class="text-body-secondary">Missões semanais</small>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <i class="bi bi-calendar3 fs-4 mb-1 text-primary"></i>
+                                <small class="text-body-secondary">Missões mensais</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-4">
+                <div class="card-body">
+                    <h2 class="h4 mb-3">Mensal</h2>
+                    <img src="https://quickchart.io/chart?c={type:'bar',data:{labels:['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Out'],datasets:[{label:'Desempenho',data:[20,15,15,30,17,13,15,7],backgroundColor:'%23F04E29',borderRadius:4}]},options:{legend:{display:false},scales:{yAxes:[{ticks:{beginAtZero:true}}],xAxes:[{gridLines:{display:false}}]}}}" alt="Gráfico de desempenho mensal" class="img-fluid w-100">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-4 d-flex flex-column gap-4">
+
+            <div class="card p-3">
+                <div class="card-body">
+                    <div class="d-flex justify-content-around mb-4 text-center">
+                        <div>
+                            <i class="bi bi-check-square-fill fs-3 text-success"></i>
+                            <p class="small mb-0 fw-bold">MISSÕES SEMANAIS</p>
+                            <p class="small text-body-secondary mb-0">COMPLETADAS</p>
+                        </div>
+                        <div>
+                            <i class="bi bi-check-square-fill fs-3 text-success"></i>
+                            <p class="small mb-0 fw-bold">MISSÕES MENSAIS</p>
+                            <p class="small text-body-secondary mb-0">COMPLETADAS</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="mt-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-bullseye fs-3 text-primary me-3"></i>
+                            <h3 class="h5 mb-0 fw-bold">METAS</h3>
+                        </div>
+                        <ul class="list-unstyled mb-0 ps-2">
+                            <li class="mb-2"><span class="me-2" style="color: var(--cor-principal);">●</span> Aumentar ticket médio</li>
+                            <li><span class="me-2" style="color: var(--cor-principal);">●</span> Fidelizar clientes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-3 flex-grow-1">
+                <div class="card-body d-flex flex-column justify-content-around">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-x-circle fs-2 me-3 text-danger"></i>
+                            <span class="fw-bold">Faltas</span>
+                        </div>
+                        <span class="fs-4 fw-bold">1</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-trophy fs-2 me-3 text-success"></i>
+                            <span class="fw-bold">Metas Alcançadas</span>
+                        </div>
+                        <span class="fs-4 fw-bold">35</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-calendar-check fs-2 me-3 text-primary"></i>
+                            <span class="fw-bold">Missões Semanais</span>
+                        </div>
+                        <span class="fs-4 fw-bold">9</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-exclamation-triangle fs-2 me-3 text-danger"></i>
+                            <span class="fw-bold">Advertências</span>
+                        </div>
+                        <span class="fs-4 fw-bold">0</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    <small>&copy; 2024 - Swift Corporativo - 02.914.460/0382-04. Todos os direitos reservados.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("click", function (event) {
+      const navMenu = document.getElementById("topnav");
+      const isClickInside = navMenu.contains(event.target);
+      const toggler = document.querySelector(".navbar-toggler");
+
+      // se o menu está aberto e o clique não foi dentro da navbar nem no botão
+      if (navMenu.classList.contains("show") && !isClickInside && !toggler.contains(event.target)) {
+        const bsCollapse = new bootstrap.Collapse(navMenu, { toggle: true });
+        bsCollapse.hide();
+      }
+    });
+  </script>
+    <script src="../assets/script/script.js"></script>
+
+</body>
+
+</html>

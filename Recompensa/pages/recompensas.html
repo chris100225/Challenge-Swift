@@ -7,47 +7,78 @@
   <title>Recompensas</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../Styles/recompensas.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 
 <body>
 
-  <header class="bg-white shadow-sm">
-    <nav class="container d-flex justify-content-between align-items-center py-2">
-      <div class="d-flex align-items-center gap-4">
-        <img src="../images/NOVA_LOGO_SWIFT_-removebg-preview 1.png" alt="Logo Swift" style="height: 40px;">
-        <ul class="nav">
-          <li class="nav-item"><a class="nav-link text-dark" href="#">Início</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="#">Desempenho</a></li>
-          <li class="nav-item"><a class="nav-link active" href="#">Recompensas</a></li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg sticky-top bg-white border-bottom">
+  <div class="container-xxl">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center gap-2 swift-brand" href="inicio.html">
+      <img src="../assets/images/NOVA_LOGO_SWIFT_-removebg-preview 1.png"
+           alt="Swift"
+           class="logo-mark"
+           width="28" height="28">
+    </a>
 
+    <!-- Botão do menu hamburguer -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topnav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Conteúdo que colapsa -->
+    <div class="collapse navbar-collapse" id="topnav">
+      <!-- Links da esquerda -->
+      <ul class="navbar-nav ms-2 me-auto gap-lg-3">
+        <li class="nav-item"><a class="nav-link" href="inicio.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="desempenho.html">Desempenho</a></li>
+        <li class="nav-item"><a class="nav-link active" href="recompensas.html">Recompensas</a></li>
+      </ul>
+
+      <!-- Barra de pesquisa -->
+      <form class="searchbar d-none d-md-block me-4" role="search">
+        <i class="bi bi-search"></i>
+        <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+      </form>
+
+      <!-- Ícones e menu do usuário -->
       <div class="d-flex align-items-center gap-3">
-        <div class="input-group">
-          <span class="input-group-text bg-transparent border-end-0"><img src="../images/SIMBOLO_LUPA-removebg-preview 1.png" alt="Pesquisar" style="height: 16px;"></span>
-          <input type="text" class="form-control border-start-0" placeholder="Pesquisar">
-        </div>
-        <img src="../images/bell 1.png" alt="Notificações" style="height: 24px; cursor: pointer;">
-        <img src="../images/image 34.png" alt="Perfil" style="height: 40px; cursor: pointer;">
-      </div>
-    </nav>
-  </header>
+        <button class="icon-btn" type="button" aria-label="Notificações">
+          <i class="bi bi-bell"></i>
+          <span class="badge rounded-pill">1</span>
+        </button>
 
-  <main class="container my-5">
+        <div class="dropdown">
+          <button class="avatar-btn dropdown-toggle p-0 border-0 bg-transparent" 
+                  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="../assets/images/image 34.png" alt="Perfil" class="avatar">
+          </button>
+          <ul class="dropdown-menu dropdown-menu-lg-end dropdown-menu-start shadow-sm">
+            <li><button class="dropdown-item" type="button" data-logout>Sair</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+  <main class="container py-4">
     <h1 class="mb-4">Recompensas</h1>
     <div class="row g-4">
       
       <div class="col-lg-8">
-        <div class="card p-3 mb-4">
-          <h2 class="h4 mb-3">Catálogo de Recompensas</h2>
-          <div class="row">
-            <div class="col-md-4">
+        <div class="card p-3 mb-5">
+          <h2 class="h4 text-body-secondary mb-3">Catálogo de Recompensas</h2>
+          <div class="row ">
+            <div class="col-md-4 mb-5">
               <div class="card text-center card-recompensa">
                 <div class="card-img-top-wrapper bg-info-subtle">
-                  <img src="../images/image 38.png" alt="Viagem Aérea">
+                  <img src="../assets/images/image 38.png" alt="Viagem Aérea">
                 </div>
                 <div class="card-body">
                   <p class="fw-bold mb-1">Vale Viagem Aérea</p>
@@ -55,10 +86,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mb-5">
               <div class="card text-center card-recompensa">
                 <div class="card-img-top-wrapper bg-warning-subtle">
-                  <img src="../images/image 40.png" alt="Vale Presente">
+                  <img src="../assets/images/image 40.png" alt="Vale Presente">
                 </div>
                 <div class="card-body">
                   <p class="fw-bold mb-1">Vale Presente R$200,00</p>
@@ -66,10 +97,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mb-5 ">
                 <div class="card text-center card-recompensa">
                   <div class="card-img-top-wrapper bg-info-subtle">
-                    <img src="../images/image 41.png" alt="Dia de Folga">
+                    <img src="../assets/images/image 41.png" alt="Dia de Folga">
                   </div>
                   <div class="card-body">
                     <p class="fw-bold mb-1">Dia de Folga</p>
@@ -80,19 +111,19 @@
           </div>
         </div>
 
-        <div class="card p-3 d-flex flex-row justify-content-between align-items-center">
-          <h2 class="h4 mb-0">Seus Pontos</h2>
-          <span class="fs-3 fw-bold">1500</span>
+        <div class="card p-4 d-flex flex-row justify-content-between align-items-center mb-3">
+          <h2 class="h4 text-body-secondary mb-0">Seus Pontos</h2>
+          <span class="h4 text-body-secondary">1500</span>
         </div>
       </div>
 
       <div class="col-lg-4">
-        <div class="card p-3 mb-4">
+        <div class="card p-3 mb-5">
           <h2 class="h4">Seu Feedback</h2>
-          <p class="text-body-secondary">Parabéns pelo excelente desempenho! Sua dedicação tem feito a diferença todos os dias.</p>
+          <p class="text-body-secondary">Parabéns pelo excelente desempenho!!!<br>Sua dedicação tem feito a diferença todos os dias.</p>
         </div>
-        <div class="card p-3">
-          <h2 class="h4">Progressão Visual</h2>
+        <div class="card p-3 mb-4">
+          <h2 class="h4">Progressão Visual 🚀</h2>
           <p class="text-body-secondary">Receba mais feedbacks positivos e suba de nível</p>
           <div class="d-flex justify-content-between small text-body-secondary">
             <span>875/1000XP</span>
@@ -112,6 +143,21 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("click", function (event) {
+      const navMenu = document.getElementById("topnav");
+      const isClickInside = navMenu.contains(event.target);
+      const toggler = document.querySelector(".navbar-toggler");
+
+      // se o menu está aberto e o clique não foi dentro da navbar nem no botão
+      if (navMenu.classList.contains("show") && !isClickInside && !toggler.contains(event.target)) {
+        const bsCollapse = new bootstrap.Collapse(navMenu, { toggle: true });
+        bsCollapse.hide();
+      }
+    });
+  </script>
+  <script src="../assets/script/script.js"></script>
+
 </body>
 
 </html>

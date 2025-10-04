@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top bg-white border-bottom">
+  <div class="container-xxl">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center gap-2 swift-brand" href="inicio.html">
+      <img src="../assets/images/NOVA_LOGO_SWIFT_-removebg-preview 1.png"
+           alt="Swift"
+           class="logo-mark"
+           width="28" height="28">
+    </a>
+
+    <!-- Botão do menu hamburguer -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topnav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Conteúdo que colapsa -->
+    <div class="collapse navbar-collapse" id="topnav">
+      <!-- Links da esquerda -->
+      <ul class="navbar-nav ms-2 me-auto gap-lg-3">
+        <li class="nav-item"><a class="nav-link active" href="inicio.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="desempenho.html">Desempenho</a></li>
+        <li class="nav-item"><a class="nav-link" href="recompensas.html">Recompensas</a></li>
+      </ul>
+
+      <!-- Barra de pesquisa -->
+      <form class="searchbar d-none d-md-block me-4" role="search">
+        <i class="bi bi-search"></i>
+        <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+      </form>
+
+      <!-- Ícones e menu do usuário -->
+      <div class="d-flex align-items-center gap-3">
+        <button class="icon-btn" type="button" aria-label="Notificações">
+          <i class="bi bi-bell"></i>
+          <span class="badge rounded-pill">1</span>
+        </button>
+
+        <div class="dropdown">
+          <button class="avatar-btn dropdown-toggle p-0 border-0 bg-transparent" 
+                  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="../assets/images/image 34.png" alt="Perfil" class="avatar">
+          </button>
+          <ul class="dropdown-menu dropdown-menu-lg-end dropdown-menu-start shadow-sm">
+            <li><button class="dropdown-item" type="button" data-logout>Sair</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<main class="container py-4">
+    <h1 class="mb-4">Bem-vindo, Marcos!</h1>
+    
+    <div class="row g-4">
+
+        <div class="col-lg-8">
+            <div class="row g-5 mb-5">
+                <div class="col-md-6"><div class="card p-5 h-100 d-flex flex-column"><h2 class="h5 text-body-secondary mb-4">Recompensa Próxima</h2><div class="d-flex align-items-center gap-4 mb-4"><img src="../assets/images/Folga.png" alt="Ícone de folga" style="width: 80px; height: 80px; object-fit: contain;"><div><p class="fw-bold fs-3 mb-1">Folga</p></div></div><div class="progress w-100 mt-auto" style="height: 12px;"><div class="progress-bar bg-primary" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div></div><p class="fs-6 text-body-secondary mt-3 mb-0">1500 / 3000 pontos</p></div></div>
+                <div class="col-md-6"><div class="card p-5 h-100 d-flex flex-column"><h2 class="h5 text-body-secondary mb-3">Seu Desempenho</h2><div class="d-flex align-items-center gap-4 mb-4 w-100"><img src="../assets/images/image 34.png" alt="Perfil" class="avatar avatar-xl"><div class="flex-grow-1"><span class="fw-bold fs-4 d-block mb-2">Nível 3</span><div class="progress" style="height: 12px;"><div class="progress-bar bg-primary" role="progressbar" style="width: 87.5%;" aria-valuenow="87.5" aria-valuemin="0" aria-valuemax="100"></div></div><small class="text-body-secondary fs-6">875/1000XP</small></div></div><div class="d-flex justify-content-around text-center mt-auto"><div class="d-flex flex-column align-items-center"><div class="stat-icon-lg bg-success-subtle text-success mb-2"><i class="bi bi-check-lg"></i></div><p class="mb-0 fs-6">75% Metas</p></div><div class="d-flex flex-column align-items-center"><div class="stat-icon-lg bg-primary-subtle text-primary mb-2"><i class="bi bi-arrow-up"></i></div><p class="mb-0 fs-6">+2 Reputação</p></div><div class="d-flex flex-column align-items-center"><div class="stat-icon-lg bg-danger-subtle text-danger mb-2"><i class="bi bi-exclamation-triangle"></i></div><p class="mb-0 fs-6">0 Advertências</p></div></div></div></div>
+            </div>
+            <div class="card feed-card mb-5"><div class="card-body p-4"><div class="d-flex gap-4"><img src="../assets/images/leticia.png" alt="Avatar Letícia" class="avatar avatar-xl"><div class="flex-grow-1"><h3 class="h5 mb-1">Letícia Souza <span class="badge bg-light text-dark fw-normal fs-6">#conquista</span></h3><p class="mt-2 mb-3 fs-5">Excelente trabalho, equipe!!!</p><input type="text" class="form-control form-control-lg" placeholder="Escreva um comentário..."></div></div></div></div>
+            <div class="card feed-card"><div class="card-body p-4"><div class="d-flex gap-4"><img src="../assets/images/carlos.png" alt="Avatar Carlos" class="avatar avatar-xl"><div class="flex-grow-1"><h3 class="h5 mb-1">Carlos Eduardo <span class="badge bg-light text-dark fw-normal fs-6">#avanço</span></h3><p class="mt-2 mb-3 fs-5">Estamos avançando nas metas, bora!!</p><input type="text" class="form-control form-control-lg" placeholder="Escreva um comentário..."></div></div></div></div>
+        </div>
+
+        <div class="col-lg-4 d-lg-flex flex-column">
+            
+            <div class="card mb-5 p-0">
+                <div class="card-body">
+                    <h2 class="h4 mb-4">Painel de Controle</h2>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-4"><a href="#" class="d-flex align-items-center gap-3 text-decoration-none text-dark"><div class="control-panel-icon-lg bg-danger-subtle text-danger"><i class="bi bi-megaphone-fill"></i></div><div><span class="fw-bold d-block fs-6">Campanha de Vendas</span><small class="text-body-secondary">Evento</small></div></a></li>
+                        <li class="mb-4"><a href="#" class="d-flex align-items-center gap-3 text-decoration-none text-dark"><div class="control-panel-icon-lg bg-primary-subtle text-primary"><i class="bi bi-chat-left-dots-fill"></i></div><div><span class="fw-bold d-block fs-6">Comunicação Interna</span><small class="text-body-secondary">Mural</small></div></a></li>
+                        <li class="mb-4"><a href="#" class="d-flex align-items-center gap-3 text-decoration-none text-dark"><div class="control-panel-icon-lg bg-warning-subtle text-warning"><i class="bi bi-flag-fill"></i></div><div><span class="fw-bold d-block fs-6">Iniciar Novo Desafio</span></div></a></li>
+                        <li><a href="#" class="d-flex align-items-center gap-3 text-decoration-none text-dark"><div class="control-panel-icon-lg bg-info-subtle text-info"><i class="bi bi-signpost-split-fill"></i></div><div><span class="fw-bold d-block fs-6">Caminho de Desenvolvimento</span></div></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card flex-grow-1 d-flex flex-column p-3">
+                <div class="card-body d-flex flex-column">
+                    <h2 class="h4 mb-3">Ranking Geral</h2>
+                    <ol class="list-group list-group-flush list-group-numbered ranking-list flex-grow-1 d-flex flex-column justify-content-around">
+                        <li class="list-group-item">Marcos Layber <span class="badge">1500 pts</span></li>
+                        <li class="list-group-item">Marco Aurélio <span class="badge">1493 pts</span></li>
+                        <li class="list-group-item">Mineto <span class="badge">1490 pts</span></li>
+                        <li class="list-group-item">Victória <span class="badge">1450 pts</span></li>
+                        <li class="list-group-item">Garden <span class="badge">1350 pts</span></li>
+                        <li class="list-group-item">Jorge <span class="badge">1330 pts</span></li>
+                        <li class="list-group-item">Maria <span class="badge">1315 pts</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    <small>&copy; 2024 - Swift Corporativo - 02.914.460/0382-04. Todos os direitos reservados.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("click", function (event) {
+      const navMenu = document.getElementById("topnav");
+      const isClickInside = navMenu.contains(event.target);
+      const toggler = document.querySelector(".navbar-toggler");
+
+      // se o menu está aberto e o clique não foi dentro da navbar nem no botão
+      if (navMenu.classList.contains("show") && !isClickInside && !toggler.contains(event.target)) {
+        const bsCollapse = new bootstrap.Collapse(navMenu, { toggle: true });
+        bsCollapse.hide();
+      }
+    });
+  </script>
+    <script src="../assets/script/script.js"></script>
+
+</body>
+
+</html>

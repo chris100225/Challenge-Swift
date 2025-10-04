@@ -1,0 +1,286 @@
+/* ==========================================================================
+   1. CONFIGURAÇÃO BASE (BASE)
+   ========================================================================== */
+
+/**
+ * Variáveis de Cor e Tipografia
+ *
+ * Centralizar as variáveis aqui facilita a manutenção do tema do site.
+ * Prefira nomes que descrevem a função, não a cor (ex: --cor-primaria em vez de --laranja).
+ */
+:root {
+  /* Cores */
+  --cor-primaria: #F04E29;
+  --cor-primaria-escura: #d04327;
+  --cor-primaria-clara: #fff3ec;
+  --cor-fundo: #F5F7FA;
+  --cor-texto: #1f2328;
+  --cor-texto-muted: #6b7280;
+  --cor-sucesso: #22c55e;
+  --cor-perigo: #ef4444;
+  --cor-borda: #dee2e6;
+
+  /* Tipografia */
+  --fonte-principal: 'Noto Sans', sans-serif;
+  --fonte-destaque: 'Inter', sans-serif;
+
+  /* Outros */
+  --raio-borda: 1rem; /* 16px */
+}
+
+/**
+ * Estilos Globais e Reset
+ *
+ * Define estilos básicos para o body, links e a estrutura geral da página.
+ */
+body {
+  background-color: var(--cor-fundo);
+  font-family: var(--fonte-principal);
+  color: var(--cor-texto);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Faz o conteúdo principal ocupar o espaço disponível */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fonte-destaque);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ==========================================================================
+   2. COMPONENTES REUTILIZÁVEIS (COMPONENTS)
+   ========================================================================== */
+
+/**
+ * Cards
+ * Estilo base para todos os cards da aplicação.
+ */
+.card {
+  border: none;
+  border-radius: var(--raio-borda);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/**
+ * Botões
+ * Inclui o botão principal da marca e botões de ícone.
+ */
+.btn-brand {
+  background: var(--cor-primaria);
+  color: #fff;
+  border-radius: 9999px;
+  padding-block: .9rem;
+  font-weight: 600;
+  border: none;
+}
+.btn-brand:hover, .btn-brand:focus {
+  background: var(--cor-primaria-escura);
+  color: #fff;
+}
+
+.icon-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  display: grid;
+  place-items: center;
+  font-size: 1.4rem;
+  color: #2c2c2c;
+  position: relative;
+}
+.icon-btn .badge {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  background-color: var(--cor-perigo);
+
+  /* --- Linhas adicionadas para o ajuste --- */
+  font-size: 0.65rem; /* Deixa o número um pouco menor */
+  padding: 0.2em 0.45em; /* Ajusta o espaçamento ao redor do número */
+  line-height: 1;      /* Melhora o alinhamento vertical */
+}
+
+/**
+ * Avatares
+ * Diferentes tamanhos de avatares usados no sistema.
+ */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #f1f1f1;
+  object-fit: cover;
+  background-color: #f6f6f6;
+}
+.avatar-xl {
+  width: 64px;
+  height: 64px;
+}
+.avatar-btn.dropdown-toggle::after {
+  display: none;
+}
+
+/**
+ * Formulários
+ * Estilos para inputs, como a barra de pesquisa.
+ */
+.form-control {
+  min-height: 48px;
+  border-color: var(--cor-borda);
+}
+.form-control:focus {
+  border-color: var(--cor-primaria);
+  box-shadow: none;
+}
+
+.searchbar {
+  position: relative;
+  width: min(440px, 46vw);
+}
+.searchbar .form-control {
+  border: 1px solid var(--cor-primaria);
+  border-radius: 10px;
+  padding-left: 2.6rem;
+  box-shadow: 0 3px 8px rgba(240, 78, 41, 0.25);
+}
+.searchbar .bi-search {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: var(--cor-primaria);
+}
+
+/**
+ * Barra de Progresso
+ */
+.progress {
+  border-radius: 50px;
+}
+.progress-bar {
+  border-radius: 50px;
+  background-color: var(--cor-primaria); /* Cor padrão da barra */
+}
+
+/* ==========================================================================
+   3. LAYOUT
+   ========================================================================== */
+
+/**
+ * Navbar (Cabeçalho)
+ * Estilos específicos para a barra de navegação principal.
+ */
+.navbar {
+  background-color: #fff;
+}
+.navbar .nav-link {
+  font-weight: 600;
+  color: #111;
+}
+.navbar .nav-link.active {
+  color: var(--cor-primaria) !important;
+}
+.navbar .logo-mark {
+  width: auto;
+  height: 28px;
+}
+
+@media (max-width: 991.98px) {
+  .searchbar {
+    width: 100%;
+    margin: .5rem 0;
+  }
+}
+
+/* ==========================================================================
+   4. PÁGINAS ESPECÍFICAS (PAGES)
+   ========================================================================== */
+
+/**
+ * Página de Login
+ */
+.login-page-bg {
+  background-color: var(--cor-primaria);
+}
+.login-card {
+  width: clamp(320px, 90vw, 560px);
+  border-radius: 20px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+  background-color: #f7f7f7;
+}
+.login-card .card-body {
+  padding: 3rem;
+}
+.login-card .logo-img {
+  height: 52px;
+}
+.login-card .form-control {
+  border-radius: 9999px;
+}
+
+@media (max-width: 576px) {
+  .login-card .card-body { padding: 2rem; }
+  .login-card .logo-img { height: 44px; }
+}
+
+/**
+ * Página de Início (Feed e Ranking)
+ */
+.feed-card .form-control {
+  background-color: var(--cor-fundo);
+}
+.ranking-list {
+  padding-left: 0;
+}
+.ranking-list .list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  border: none;
+}
+.ranking-list .badge {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto-muted);
+  font-weight: 500;
+}
+.ranking-list .list-group-item:first-child {
+  color: var(--cor-primaria);
+  font-weight: 700;
+}
+.ranking-list .list-group-item:first-child .badge {
+  background-color: var(--cor-primaria);
+  color: #fff;
+}
+
+/**
+ * Página de Recompensas
+ */
+.card-recompensa {
+  border: 1px solid var(--cor-borda);
+  box-shadow: none;
+}
+.card-recompensa .card-img-top-wrapper {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+.card-recompensa img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
